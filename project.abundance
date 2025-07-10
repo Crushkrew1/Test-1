@@ -99,10 +99,46 @@
                         },
                         {
                             "name": "height",
-                            "ioValue": 60
+                            "ioValue": 50
                         }
                     ],
                     "description": "Extrudes a 2D shape. Input can be negitive. "
+                },
+                {
+                    "atomType": "Difference",
+                    "name": "Difference",
+                    "x": 0.3307291666666667,
+                    "y": 0.49176470588235294,
+                    "uniqueID": "eb21b098-31e3-4f62-a575-8ec428024bbe",
+                    "ioValues": [
+                        {
+                            "name": "geometry1",
+                            "ioValue": "c7f3453b-a6d7-4777-b01a-c78d6e23a68e"
+                        },
+                        {
+                            "name": "geometry2",
+                            "ioValue": "b1a8f815-d6ad-4786-a90b-89a69fd07bc6"
+                        }
+                    ],
+                    "description": "Subtracts shape two from shape one."
+                },
+                {
+                    "atomType": "Rectangle",
+                    "name": "Rectangle",
+                    "x": 0.3494791666666667,
+                    "y": 0.7082352941176471,
+                    "uniqueID": "682952c3-1746-4a77-b911-f87fdb72171c",
+                    "ioValues": [
+                        {
+                            "name": "x length",
+                            "ioValue": 10
+                        },
+                        {
+                            "name": "y length",
+                            "ioValue": 10
+                        }
+                    ],
+                    "description": "Creates a new rectangle."
                 }
             ],
             "allConnectors": [
@@ -115,10 +151,24 @@
                 },
                 {
                     "ap1Name": "geometry",
+                    "ap2Name": "geometry1",
+                    "ap2Primary": false,
+                    "ap1ID": "c7f3453b-a6d7-4777-b01a-c78d6e23a68e",
+                    "ap2ID": "eb21b098-31e3-4f62-a575-8ec428024bbe"
+                },
+                {
+                    "ap1Name": "geometry",
                     "ap2Name": "geometry",
                     "ap2Primary": true,
                     "ap1ID": "235ed099-9995-4981-bc79-c6cf085a2a95",
                     "ap2ID": "b1a8f815-d6ad-4786-a90b-89a69fd07bc6"
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry2",
+                    "ap2Primary": false,
+                    "ap1ID": "b1a8f815-d6ad-4786-a90b-89a69fd07bc6",
+                    "ap2ID": "eb21b098-31e3-4f62-a575-8ec428024bbe"
                 }
             ],
             "fileTypeVersion": 1,
