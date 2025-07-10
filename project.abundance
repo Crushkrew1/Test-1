@@ -125,20 +125,38 @@
                 {
                     "atomType": "Rectangle",
                     "name": "Rectangle",
-                    "x": 0.3494791666666667,
-                    "y": 0.7082352941176471,
+                    "x": 0.3697916666666667,
+                    "y": 0.7270588235294118,
                     "uniqueID": "682952c3-1746-4a77-b911-f87fdb72171c",
                     "ioValues": [
                         {
                             "name": "x length",
-                            "ioValue": 10
+                            "ioValue": 50
                         },
                         {
                             "name": "y length",
-                            "ioValue": 10
+                            "ioValue": 100
                         }
                     ],
                     "description": "Creates a new rectangle."
+                },
+                {
+                    "atomType": "Extrude",
+                    "name": "Extrude",
+                    "x": 0.44375,
+                    "y": 0.8282352941176472,
+                    "uniqueID": "34be8af0-0b26-4772-b5a4-a44bd13537e9",
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": "682952c3-1746-4a77-b911-f87fdb72171c"
+                        },
+                        {
+                            "name": "height",
+                            "ioValue": 50
+                        }
+                    ],
+                    "description": "Extrudes a 2D shape. Input can be negitive. "
                 }
             ],
             "allConnectors": [
@@ -169,6 +187,13 @@
                     "ap2Primary": false,
                     "ap1ID": "b1a8f815-d6ad-4786-a90b-89a69fd07bc6",
                     "ap2ID": "eb21b098-31e3-4f62-a575-8ec428024bbe"
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": "682952c3-1746-4a77-b911-f87fdb72171c",
+                    "ap2ID": "34be8af0-0b26-4772-b5a4-a44bd13537e9"
                 }
             ],
             "fileTypeVersion": 1,
